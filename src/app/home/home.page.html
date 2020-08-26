@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Professores
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="outer-content">
+  <ion-card  *ngFor = "let p of musicos">
+    <img [src]='safe(p.avatar)' />
+
+    <div class="position-rating">
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+      <i class="fa fa-star-o" aria-hidden="true"></i>
+    </div>
+
+    <ion-card-header>
+      <ion-card-subtitle>{{ p.nome }}</ion-card-subtitle>
+      <a href="https://api.whatsapp.com/send?phone={{'55' + p.telefone}}&text=Olá">
+        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+      </a>
+      <ion-card-title>Descrição</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>
+        {{ p.descricao }}
+      </p>
+    </ion-card-content>
+  </ion-card>
+
+    <ion-spinner *ngIf="musicos == null"></ion-spinner>
+    
+    <div class="card_consulta" *ngIf="musicos == 0" >
+      <i class="fa fa-frown-o" aria-hidden="true"></i>
+      <strong>Não há registros de músicos no momento!</strong>
+    </div>
+
+</ion-content>

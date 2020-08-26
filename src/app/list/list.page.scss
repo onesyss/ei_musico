@@ -1,0 +1,50 @@
+ion-toolbar{
+    --background:#FE9A2E;
+    color:white;
+    height:85px;
+}
+
+ion-title{
+    margin-top:35px;
+  }
+  
+  ion-menu-button{
+    color:white;
+    margin-top:35px;
+}
+
+img{
+    margin-top:60px;
+    margin-left:40%;
+    width:72px;
+    height:72px;
+}
+
+div{
+ margin-top:18px;
+}
+
+div p{
+    text-align:justify;
+    color:gray;
+    width:90%;
+    margin-left:18px;
+}
+
+.footer{
+    margin-top:100px;
+}
+
+.footer label{
+    font-weight:bold;
+    margin-left:18px;
+    font-size:20px;
+    color:rgb(126, 126, 126)
+}
+
+.footer p{
+    font-size:16px;
+    font-weight:bold;
+    color:gray;
+    margin-left:18px;
+}

@@ -1,0 +1,36 @@
+<ion-header>
+  <ion-toolbar>
+    <!--<ion-button color="light" (click)="dismissRegister()">Close</ion-button>-->
+    <ion-buttons slot="start" (click)="dismissRegister()">
+      <i class="fa fa-arrow-left" style="margin-left:10px" aria-hidden="true"></i>
+    </ion-buttons>
+    <ion-title>Cadastro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <label text-center>
+    <img src="../../../assets/img/output-onlinepngtools.png" width="100">
+  </label>
+  <form #form="ngForm" (ngSubmit)="register(form)" method="post">
+    <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input ngModel name="nome" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input type="email" ngModel name="email" required></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input type="password" ngModel name="senha" required></ion-input>
+    </ion-item>
+    <p></p>
+    <ion-button type="submit" shape="round" expand="full" >Cadastrar</ion-button>
+  </form>
+
+  <p text-center>Voce já possui conta?</p>
+  <a (click)="loginModal()"><p text-center>Login</p></a>
+</ion-content>  

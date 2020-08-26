@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+#map{
+    height:100%;
+    z-index:10;
+}
+
+ion-toolbar{
+    --background:#FE9A2E;
+    color:white;
+    height:85px;
+}
+
+ion-title{
+    margin-top:35px;
+}
+
+ion-menu-button{
+    color:white;
+    margin-top:35px;
+}
+
+ion-card{
+    border-radius:100px;
+    height:40px;
+    padding-left:20px;
+    z-index:100;
+    position:absolute;
+    width:94%;
+    background:white;
+    margin-top:6%;
+}
+
+ion-card ion-input{
+    width:79%;
+    margin-top:2px;
+    position:absolute;
+}
+
+ion-card button{
+    color:black;
+    font-size:26px;
+    margin-top:-8px;
+    margin-left:92%;
+    color:#848484;
+    background:transparent;
+    outline:none;
+}
+
+#markerLayer img {
+    border: 2px solid red !important;
+    width: 85% !important;
+    height: 90% !important;
+    border-radius: 5px;
+}

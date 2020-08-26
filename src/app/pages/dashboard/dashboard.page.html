@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Procure seu professor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card> 
+    <form #form="ngForm" (ngSubmit)="search(form)" method="post"> 
+      <ion-input name ="search" ngModel placeholder="Pesquise o instrumento"></ion-input>
+      <ion-input name ="latitude" type="hidden" value="{{ lat }}" ngModel ></ion-input>
+      <ion-input name ="longitude" type="hidden" value="{{ lng }}" ngModel ></ion-input>
+      <ion-card-content>
+        <button type="submit">
+          <i class="fa fa-crosshairs" aria-hidden="true"></i>
+        </button>
+      </ion-card-content>
+    </form>
+  </ion-card>
+
+
+<div #map id="map"></div>
+
+</ion-content>

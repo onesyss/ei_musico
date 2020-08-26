@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+ion-toolbar{
+  --background:#FE9A2E;
+  color:white;
+  height:85px;
+}
+
+ion-title{
+  margin-top:35px;
+}
+
+ion-menu-button{
+  color:white;
+  margin-top:35px;
+}
+
+ion-card{
+  --background:white;
+}
+
+ion-card img {
+  border-radius:100px;
+  margin-left:10px;
+  margin-top:10px;
+  width:50px;
+  height:50px;
+  object-fit:cover;
+}
+
+.card_consulta{
+  margin-top:60%;
+  text-align:center;
+  height:50px;
+  color:gray;
+}
+
+.card_consulta i{
+ font-size:48px;
+ margin-top:-60px;
+ margin-left:136px;
+ position:absolute;
+}
+
+.position-rating{
+  position:absolute;
+  z-index:100;
+  margin-top:-78px;
+  margin-left:80px;
+}
+
+ion-card a{
+  position:absolute;
+  z-index:100;
+  margin-left:80%;
+  font-size:30px;
+  color:#34af23;
+}
+
+.position-rating{
+  position:absolute;
+  z-index:100;
+  margin-top:-40px;
+}
+
+.position-rating i{
+  font-size:22px;
+  padding:4px;
+}
+
+ion-spinner{
+  margin-left:46%;
+  margin-top:54%;
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar class="bar">
+    <!--<ion-button color="light" (click)="dismissLogin()">Close</ion-button>-->
+    <ion-buttons slot="start" (click)="dismissLogin()">
+      <i class="fa fa-arrow-left" style="margin-left:10px" aria-hidden="true"></i>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <label text-center>
+    <img src="../../../assets/img/output-onlinepngtools.png" width="100">
+  </label>
+  <form #form="ngForm" (ngSubmit)="login(form)" method="post">
+    <ion-item>
+      <ion-label position="floating">Email</ion-label>
+      <ion-input ngModel type="email" name="email"></ion-input>
+    </ion-item>
+  
+    <ion-item>
+      <ion-label position="floating">Senha</ion-label>
+      <ion-input ngModel type="password" name="senha"></ion-input>
+    </ion-item>
+  
+    <p text-right>Esqueceu sua senha?</p>
+  
+    <ion-button type="submit" expand="full" class="botao" shape="round" >Entrar</ion-button>
+  </form>
+
+  <p text-center>Não possui conta?</p>
+  <a (click)="registerModal()" ><p text-center>Cadastre-se</p></a>
+</ion-content>
